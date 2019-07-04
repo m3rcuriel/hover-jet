@@ -1,0 +1,12 @@
+*** src/VersionInfo.h	2019-06-14 22:17:19.003480596 -0700
+--- src/VersionInfo.h	2019-06-14 22:17:13.403480351 -0700
+***************
+*** 0 ****
+--- 1,7 ----
++ #ifndef VERSIONINFO_H
++ #define VERSIONINFO_H
++ 
++ #define BUILD_TIMESTAMP "@BUILD_TIMESTAMP@"
++ #define CLIENT_VERSION  "@CLIENT_VERSION@"
++ 
++ #endif /* VERSIONINFO_H */

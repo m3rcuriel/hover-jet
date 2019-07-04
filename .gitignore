@@ -33,3 +33,7 @@
 
 bin/
 tmp/
+
+# Bazel
+bazel-*
+user.bazelrc

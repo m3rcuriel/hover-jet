@@ -1,0 +1,223 @@
+diff --git a/numerics/conjugate_gradient_test.cc b/numerics/conjugate_gradient_test.cc
+index 8bba1a5..ba9f126 100644
+--- a/numerics/conjugate_gradient_test.cc
++++ b/numerics/conjugate_gradient_test.cc
+@@ -1,4 +1,4 @@
+-#include "numerics/conjugate_gradient.hh"
++#include "conjugate_gradient.hh"
+ 
+ #include "testing/gtest.hh"
+ 
+diff --git a/numerics/covariance_test.cc b/numerics/covariance_test.cc
+index 7233ddf..55ed442 100644
+--- a/numerics/covariance_test.cc
++++ b/numerics/covariance_test.cc
+@@ -1,3 +1,3 @@
+-#include "numerics/covariance.hh"
++#include "covariance.hh"
+ 
+ #include "testing/gtest.hh"
+\ No newline at end of file
+diff --git a/numerics/gauss_newton_test.cc b/numerics/gauss_newton_test.cc
+index dc9b29c..506846b 100644
+--- a/numerics/gauss_newton_test.cc
++++ b/numerics/gauss_newton_test.cc
+@@ -1,7 +1,7 @@
+-#include "numerics/gauss_newton.hh"
++#include "gauss_newton.hh"
+ 
+ #include "eigen.hh"
+-#include "numerics/numdiff.hh"
++#include "numdiff.hh"
+ #include "out.hh"
+ 
+ #include "testing/gtest.hh"
+diff --git a/numerics/gradient_descent.cc b/numerics/gradient_descent.cc
+index ecb2815..618d66b 100644
+--- a/numerics/gradient_descent.cc
++++ b/numerics/gradient_descent.cc
+@@ -1,4 +1,4 @@
+-#include "numerics/gradient_descent.hh"
++#include "gradient_descent.hh"
+ 
+ namespace numerics {
+ 
+diff --git a/numerics/gradient_descent_test.cc b/numerics/gradient_descent_test.cc
+index 5a9d2ae..3b342a3 100644
+--- a/numerics/gradient_descent_test.cc
++++ b/numerics/gradient_descent_test.cc
+@@ -1,6 +1,6 @@
+-#include "numerics/gradient_descent.hh"
++#include "gradient_descent.hh"
+ 
+-#include "numerics/numdiff.hh"
++#include "numdiff.hh"
+ 
+ #include "testing/gtest.hh"
+ 
+diff --git a/numerics/group_diff.hh b/numerics/group_diff.hh
+index 445fc7b..4c7b05a 100644
+--- a/numerics/group_diff.hh
++++ b/numerics/group_diff.hh
+@@ -1,6 +1,6 @@
+ #pragma once
+ 
+-#include "numerics/numdiff.hh"
++#include "numdiff.hh"
+ 
+ #include <functional>
+ 
+diff --git a/numerics/jacobi_laplacian_test.cc b/numerics/jacobi_laplacian_test.cc
+index 9d004e1..89665aa 100644
+--- a/numerics/jacobi_laplacian_test.cc
++++ b/numerics/jacobi_laplacian_test.cc
+@@ -1,4 +1,4 @@
+-#include "numerics/jacobi_laplacian.hh"
++#include "jacobi_laplacian.hh"
+ 
+ #include "testing/gtest.hh"
+ 
+diff --git a/numerics/line_search.cc b/numerics/line_search.cc
+index 18c76e2..e189a4b 100644
+--- a/numerics/line_search.cc
++++ b/numerics/line_search.cc
+@@ -1,4 +1,4 @@
+-#include "numerics/line_search.hh"
++#include "line_search.hh"
+ 
+ namespace numerics {
+ 
+diff --git a/numerics/line_search.hh b/numerics/line_search.hh
+index b97e596..11af01e 100644
+--- a/numerics/line_search.hh
++++ b/numerics/line_search.hh
+@@ -1,6 +1,6 @@
+ #pragma once
+ 
+-#include "numerics/optimization_problem.hh"
++#include "optimization_problem.hh"
+ 
+ #include "eigen.hh"
+ 
+diff --git a/numerics/nt_gauss_newton.cc b/numerics/nt_gauss_newton.cc
+index 4a43431..4e635b9 100644
+--- a/numerics/nt_gauss_newton.cc
++++ b/numerics/nt_gauss_newton.cc
+@@ -1,6 +1,6 @@
+ #include <iostream>
+ 
+-#include "numerics/nt_gauss_newton.hh"
++#include "nt_gauss_newton.hh"
+ 
+ namespace numerics {
+ 
+diff --git a/numerics/nt_gauss_newton_test.cc b/numerics/nt_gauss_newton_test.cc
+index 57d96d1..a2ae36c 100644
+--- a/numerics/nt_gauss_newton_test.cc
++++ b/numerics/nt_gauss_newton_test.cc
+@@ -1 +1 @@
+-#include "numerics/nt_gauss_newton.hh"
++#include "nt_gauss_newton.hh"
+diff --git a/numerics/num_hessian.hh b/numerics/num_hessian.hh
+index 601a22c..e41c1a1 100644
+--- a/numerics/num_hessian.hh
++++ b/numerics/num_hessian.hh
+@@ -1,6 +1,6 @@
+ #pragma once
+ 
+-#include "numerics/numdiff.hh"
++#include "numdiff.hh"
+ 
+ namespace numerics {
+ 
+diff --git a/numerics/numdiff.cc b/numerics/numdiff.cc
+index 6909d00..f783cde 100644
+--- a/numerics/numdiff.cc
++++ b/numerics/numdiff.cc
+@@ -1,4 +1,4 @@
+-#include "numerics/numdiff.hh"
++#include "numdiff.hh"
+ 
+ namespace numerics {
+ 
+diff --git a/numerics/numdiff_test.cc b/numerics/numdiff_test.cc
+index b63fc73..98a5d0e 100644
+--- a/numerics/numdiff_test.cc
++++ b/numerics/numdiff_test.cc
+@@ -1,5 +1,5 @@
+-#include "numerics/numdiff.hh"
+-#include "numerics/num_hessian.hh"
++#include "numdiff.hh"
++#include "num_hessian.hh"
+ 
+ #include "eigen.hh"
+ 
+diff --git a/numerics/optimization_problem.hh b/numerics/optimization_problem.hh
+index 9297840..aa08754 100644
+--- a/numerics/optimization_problem.hh
++++ b/numerics/optimization_problem.hh
+@@ -1,6 +1,6 @@
+ #pragma once
+ 
+-#include "numerics/cost_function.hh"
++#include "cost_function.hh"
+ 
+ #include "eigen.hh"
+ 
+diff --git a/numerics/optimize.cc b/numerics/optimize.cc
+index 421745c..6903617 100644
+--- a/numerics/optimize.cc
++++ b/numerics/optimize.cc
+@@ -1,6 +1,6 @@
+-#include "numerics/optimize.hh"
++#include "optimize.hh"
+ 
+-#include "numerics/line_search.hh"
++#include "line_search.hh"
+ 
+ #include <limits>
+ 
+diff --git a/numerics/optimize.hh b/numerics/optimize.hh
+index ce0c29d..3dfe0a4 100644
+--- a/numerics/optimize.hh
++++ b/numerics/optimize.hh
+@@ -2,8 +2,8 @@
+ 
+ #include "eigen.hh"
+ 
+-#include "numerics/cost_function.hh"
+-#include "numerics/optimization_problem.hh"
++#include "cost_function.hh"
++#include "optimization_problem.hh"
+ 
+ #include <functional>
+ #include <vector>
+diff --git a/numerics/optimize_test.cc b/numerics/optimize_test.cc
+index 531e4e5..7816418 100644
+--- a/numerics/optimize_test.cc
++++ b/numerics/optimize_test.cc
+@@ -1,8 +1,8 @@
+-#include "numerics/optimize.hh"
++#include "optimize.hh"
+ 
+ #include "testing/gtest.hh"
+ 
+-#include "numerics/numdiff.hh"
++#include "numdiff.hh"
+ 
+ namespace numerics {
+ 
+diff --git a/numerics/wrap_optimizer.hh b/numerics/wrap_optimizer.hh
+index 0ce625f..1326a4c 100644
+--- a/numerics/wrap_optimizer.hh
++++ b/numerics/wrap_optimizer.hh
+@@ -1,7 +1,7 @@
+ #pragma once
+ 
+-#include "numerics/cost_function.hh"
+-#include "numerics/numdiff.hh"
++#include "cost_function.hh"
++#include "numdiff.hh"
+ 
+ namespace numerics {
+ 
